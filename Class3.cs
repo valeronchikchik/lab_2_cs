@@ -20,12 +20,15 @@ namespace task3
             int z2 = Convert.ToInt32(Console.ReadLine());
 
             string result;
+            double x = x1*x1 + x2*x2;
+            double y = y1*y1 + y2*y2;
+            double z = z1*z1 + z2*z2;
 
-            if(Math.sqrt(x1*x1 + x2*x2) > Math.sqrt(y1*y1 + y2*y2) || Math.sqrt(x1*x1 + x2*x2) > Math.sqrt(z1*z1 + z2*z2))
+            if(x > y || x > z)
             {
                 result = "Сторона x найбільша";
             }
-            else if(Math.sqrt(y1*y1 + y2*y2) > Math.sqrt(x1*x1 + x2*x2) || Math.sqrt(y1*y1 + y2*y2) > Math.sqrt(z1*z1 + z2*z2))
+            else if(y > x || y > z)
             {
                 result = "Сторона y найбільша";
             }
@@ -33,6 +36,8 @@ namespace task3
             {
                 result = "Сторона z найбільша";
             }
+
+            Console.WriteLine($"Результат: {result}")
         }
     }   
 }
