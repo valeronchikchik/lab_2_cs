@@ -11,19 +11,19 @@ namespace task2
 
             int y = 0;
 
-            if (0<=n || n < 5) 
+            if (n<0) 
             {
-                y = 0;
+                y = 3;
             }
-            else if (5 <= n || n < 10)
+            else if (n>=5)
             {
                 y = 1;
             }
-            else if (10 <= n || n < 15)
+            else if (n>=10)
             {
                 y = 2;
             }
-            else
+            else if(n>=15)
             {
                 y = 3;
             }
