@@ -21,11 +21,11 @@ namespace task3
 
             string result;
 
-            if((x2 - x1) > (y2 - y1) || (x2-x1) > (z2-z1))
+            if(Math.sqrt(x1*x1 + x2*x2) > Math.sqrt(y1*y1 + y2*y2) || Math.sqrt(x1*x1 + x2*x2) > Math.sqrt(z1*z1 + z2*z2))
             {
                 result = "Сторона x найбільша";
             }
-            else if((y2 - y1) > (x2 - x1) || (y2-y1) > (z2-z1))
+            else if(Math.sqrt(y1*y1 + y2*y2) > Math.sqrt(x1*x1 + x2*x2) || Math.sqrt(y1*y1 + y2*y2) > Math.sqrt(z1*z1 + z2*z2))
             {
                 result = "Сторона y найбільша";
             }
