@@ -24,11 +24,11 @@ namespace task3
             double y = y1*y1 + y2*y2;
             double z = z1*z1 + z2*z2;
 
-            if(x > y || x > z)
+            if(x > y && x > z)
             {
                 result = "Сторона x найбільша";
             }
-            else if(y > x || y > z)
+            else if(y > x && y > z)
             {
                 result = "Сторона y найбільша";
             }
